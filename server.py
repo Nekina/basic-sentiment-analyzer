@@ -2,14 +2,9 @@
     analysis to be executed over the Flask channel and deployed on
     localhost:5001.
 '''
-# import sys
-# import os
+
 # Import Flask, render_template, request from the flask framework package
 from flask import Flask, render_template, request
-
-# Setting parent directory to one level up when looking for modules
-# project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-# sys.path.insert(0, project_root)
 
 # Import the sentiment_analyzer function from the package created
 from SentimentAnalysis.sentiment_analysis import sentiment_analyzer # pylint: disable=import-error, wrong-import-position
